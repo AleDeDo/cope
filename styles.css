@@ -19,6 +19,13 @@ html, body {
   width: 200px;
 }
 
+.bar {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  width: 200px;
+  color: #ffffff;
+}
 
 .container-index {
   height: 100%;
@@ -26,7 +33,7 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: red;
+  background-color: #1f4cd1;
 }
 
 .title-index {
