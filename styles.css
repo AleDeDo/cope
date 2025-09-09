@@ -14,18 +14,53 @@ html, body {
 
 .logo {
   position: fixed;
-  top: 15px;
-  left: 25px;
-  width: 200px;
+  top: 20px;
+  left: 20px;
+  height: 60px;
 }
 
 .bar {
   position: fixed;
-  top: 15px;
-  right: 25px;
-  width: 200px;
+  top: 20px;
+  right: 20px;
+  height: 60px;
   color: #ffffff;
 }
+
+.menu {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  padding-right:20px;
+  width: 200px;
+  height: 100%;
+  background-color: #2658EC;
+  visibility:hidden;
+  text-align:right;
+  color:#ffffff;
+  font-family: "Sofia Sans", sans-serif;
+  font-weight:700;
+  font-size:24px;
+}
+
+.nav {
+  list-style-type: none;
+}
+.nav li {
+  padding-bottom: 10px;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  padding-bottom:1px;
+  border-bottom: 2px solid #ffffff;
+}
+
+
 
 .container-index {
   height: 100%;
@@ -33,7 +68,7 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #1f4cd1;
+  background-color: gray;
 }
 
 .title-index {
@@ -53,12 +88,12 @@ footer {
   font-size:12px;
 }
 
-.link_footer {
+footer a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.link_footer:hover {
+footer a:hover {
   padding-bottom:1px;
   border-bottom: 1px solid #ffffff;
 }
