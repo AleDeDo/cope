@@ -45,6 +45,7 @@ html, body {
   font-family: "Sofia Sans", sans-serif;
   font-weight:700;
   font-size:24px;
+  z-index:1;
 }
 
 .nav {
