@@ -12,11 +12,14 @@ html, body {
   font-style: normal;
 }
 
+/* start css index */
+
 .logo {
   position: fixed;
   top: 20px;
   left: 20px;
   height: 60px;
+  z-index:1;
 }
 
 .bar {
@@ -25,6 +28,7 @@ html, body {
   right: 20px;
   height: 60px;
   color: #ffffff;
+  z-index:1;
 }
 
 .menu {
@@ -61,6 +65,13 @@ html, body {
 }
 
 
+#video-intro {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 
 .container-index {
   height: 100%;
@@ -68,7 +79,9 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: gray;
+  background-color: #000000;
+  opacity:0.8;
+  z-index:1;
 }
 
 .title-index {
@@ -76,6 +89,7 @@ html, body {
   font-family: "Sofia Sans", sans-serif;
   font-weight:700;
   font-size:36px;
+  z-index:1;
 }
 
 footer {
@@ -97,3 +111,9 @@ footer a:hover {
   padding-bottom:1px;
   border-bottom: 1px solid #ffffff;
 }
+
+/* end css index */
+
+/* start css page */
+
+/* end css page */
