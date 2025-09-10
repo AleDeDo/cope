@@ -3,9 +3,6 @@ html, body {
   margin: 0;
   border: 0;
   padding: 0;
-}
-
-.sofia-sans-<uniquifier> {
   font-family: "Sofia Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -29,6 +26,20 @@ header {
   height: 45px;
 }
 
+.border-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width:75px;
+  height: 100%;
+}
+
+@media (min-width: 769px) {
+  .border-bar {
+  border-left: 1px solid #ffffff;
+  }
+}
+
 .bar {
   position: fixed;
   top: 15px;
@@ -41,14 +52,13 @@ header {
   position: fixed;
   top: 0px;
   right: 0px;
-  padding-right:20px;
+  padding-left:20px;
   width: 100%;
   height: 100%;
   background-color: #2658EC;
   visibility:hidden;
   text-align:right;
   color:#ffffff;
-  font-family: "Sofia Sans", sans-serif;
   font-weight:700;
   font-size:24px;
   z-index:1;
@@ -56,6 +66,8 @@ header {
 
 .nav {
   list-style-type: none;
+  text-align: left;
+  padding-top: 75px;
 }
 .nav li {
   padding-bottom: 10px;
@@ -70,18 +82,6 @@ header {
   padding-bottom:1px;
   border-bottom: 2px solid #ffffff;
 }
-
-@media (min-width: 769px) {
-  .border-bar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width:75px;
-  height: 100%;
-  border-left: 1px solid #ffffff;
-}
-}
-
 
 #video-intro {
   position: fixed;
@@ -106,7 +106,6 @@ header {
 
 .title-index {
   color:#ffffff;
-  font-family: "Sofia Sans", sans-serif;
   font-weight:700;
   font-size:52px;
 }
@@ -117,7 +116,6 @@ footer {
   left: 25px;
   padding-right: 25px;
   color:#ffffff;
-  font-family: "Sofia Sans", sans-serif;
   font-weight:400;
   font-size:14px;
 }
