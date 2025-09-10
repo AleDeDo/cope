@@ -71,6 +71,18 @@ header {
   border-bottom: 2px solid #ffffff;
 }
 
+@media (min-width: 769px) {
+  .border-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width:75px;
+  height: 100%;
+  border-left: 1px solid #ffffff;
+  z-index: 1;
+}
+}
+
 
 #video-intro {
   position: fixed;
