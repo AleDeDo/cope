@@ -1,27 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<script src="scripts.js" async></script>
-	<title>COPE</title>
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/4cc3b18ed3.js" crossorigin="anonymous"></script>
-</head>
-<body>
-	
-<header>
-<img class="logo" src="https://alededo.github.io/cope/logo_w.png">
-<div class="border-bar"><i class="fas fa-bars fa-3x bar" onclick="menu_in()"></i></div>
+<header class="header-home transparent">
+<img class="logo" src="https://alededo.github.io/cope/logo_w.png"><svg fill="#ffffff" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24" onclick="menu_in()"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
 </header>
-<div class="menu" id="menu" onclick="menu_out()">
-<i class="fas fa-bars fa-3x bar" style="right:5px;"></i>
-<ul class="nav">
+
+<div class="menu-main" id="menu-main"  onclick="menu_out()">
+<svg fill="#ffffff" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+<ul class="menu-main-nav">
 <li><a href="index.html">INICIO</a></li>
 <li><a href="saludos.html">SALUDOS</a></li>
 <li><a href="#">HISTORIA</li>
@@ -30,18 +13,30 @@
 <li><a href="#">GALARDONES</a></li>
 <li><a href="#">CUMPLEAÑOS</a></li>
 <li><a href="#">QUIEN ES QUIEN</a></li>
-<li><a href="#"><i class="fas fa-bars fa-1x" style="right:5px;"></i> Escucha COPE Valencia</a></li>
+<li><a href="#" class="container-play-menu"><i class="material-symbols-outlined play-menu">arrow_back_2</i><span style="text-decoration: underline;">Escucha COPE Valencia</span></a></li>
 </ul>
 </div>
 
-<video autoplay muted loop id="video-intro">
+
+
+<video autoplay muted loop class="video-home">
 <source src="https://alededo.github.io/cope/intro.mp4" type="video/mp4">
 </video>
-<div class="container-index">
-<h1 class="title-index"><em>60 Aniversario</em><br><span style="font-weight:300;">COPE Valencia<br>2025</span><br><span style="font-size:14px; font-weight:300;">Entrar</span></h1>
+
+
+<div class="container-home">
+<h1 class="title-home"><span style="font-weight:400;"><em>60 Aniversario</em></span><br>COPE <span style="font-weight:400;">Valencia</span></h1><br>
+  
+<h2 style="font-weight:400;">2025</h2><br>
+
+<div class="title-home-link-container">
+<p><a herf="" class="title-home-link">Entrar<i class="material-symbols-outlined circle">arrow_forward</i></a></p>
 </div>
+  
 
-<footer>© Radio Popular S.A. | Todos los derechos reservados. | <a href="https://www.cope.es/contacta.html" target="blanck_">Contacta</a> | <a href="https://www.cope.es/aviso-legal.html" target="blanck_">Aviso Legal</a> | <a href="https://www.cope.es/politica-privacidad.html" target="blanck_">Política de privacidad</a> | <a href="https://www.cope.es/politica-cookies.html" target="blanck_">Política de cookies</a></footer>
+<div><a herf="" class="menu-second-home"><span class="rotate90">SALUDOS</span><i class="material-symbols-outlined circle plus7">arrow_forward</i></a></div>
 
-</body>
-</html>
+
+<footer class="footer-home">
+<p>© Radio Popular S.A. | Todos los derechos reservados. | <a href="https://www.cope.es/contacta.html" target="blanck_">Contacta</a> | <a href="https://www.cope.es/aviso-legal.html" target="blanck_">Aviso Legal</a> | <a href="https://www.cope.es/politica-privacidad.html" target="blanck_">Política de privacidad</a> | <a href="https://www.cope.es/politica-cookies.html" target="blanck_">Política de cookies</a></p>
+</footer>
