@@ -1,7 +1,7 @@
 function menu_in() {
-document.getElementById('menu').style.visibility = 'visible'
+document.getElementById('menu-main').style.right = "0%"
 }
 
 function menu_out() {
-document.getElementById('menu').style.visibility = 'hidden'
+document.getElementById('menu-main').style.right = "-100%"
 }
