@@ -283,7 +283,7 @@ p {
 
 .title-home-link:hover {
   color: #f55800;
-  column-gap:20px;
+  padding-left:20px;
 }
 
 .container-simple {
