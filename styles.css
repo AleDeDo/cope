@@ -503,6 +503,7 @@ p {
 .menu-second-element {
   transform: rotate(90deg);
   transition:0.3s;
+  background-color:red;
 }
   
 .menu-second-element:hover{
@@ -558,6 +559,7 @@ p {
   column-gap:10px;
   text-decoration:none;
   color:#000000;
+  background-color:red;
 }
   
 .desktop {
