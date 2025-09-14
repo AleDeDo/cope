@@ -321,7 +321,10 @@ p {
   color:#000000;
 }
 
-.interview-play i {
+.circle5x{
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 10px;
   transform: rotate(180deg);
 }
 
@@ -575,12 +578,6 @@ p {
   border: 1px solid;
   border-radius: 50%;
   padding: 2px;
-}
-
-.circle5x{
-  border: 1px solid;
-  border-radius: 50%;
-  padding: 10px;
 }
 
 footer { 
