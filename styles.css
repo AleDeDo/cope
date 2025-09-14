@@ -430,6 +430,21 @@ p {
 
 /*End*/
 
+.menu-second-back {
+  color:#000000;
+  text-decoration:none;
+}
+  
+.menu-second-forward {
+  color:#000000;
+  text-decoration:none;
+}
+  
+.menu-second-home {
+  color:#ffffff;
+  text-decoration:none;
+}
+
 /*Second menu desktop*/
 
 @media (min-width: 769px) {
