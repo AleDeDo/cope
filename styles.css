@@ -290,6 +290,10 @@ p {
   padding:50px 25px 30px 25px;
 } 
 
+.title-page {
+  color:#2658EC;
+}
+
 /*Content simple desktop*/
 
 @media (min-width: 769px) {
@@ -318,12 +322,16 @@ p {
   transform: rotate(180deg);
 }
 
+/*Ver video hover desktop*/
+
 @media (min-width: 769px) {
 
 .interview-play:hover {
   color: #f55800;
 }
 }
+
+/*End*/
 
 .popup-video-container {
   width:100%; 
@@ -341,27 +349,59 @@ p {
   width:100%; 
   height:100%; 
   position:relative; 
-  padding-top: 200px;
 }
 
 .popup-video svg {
   position: absolute;
-  top: 125px;
-  right: 25px;
+  top: 15px;
+  right: 15px;
   height: 45px;
   z-index:1;
 }
 
 .popup-video video {
-  width:384px; 
-  height:216px;
+  width:100%; 
+  padding-top:75px;
 }
 
 .popup-video img {
   height:216px;
 }
 
+.popup-video figure {
+  margin-top:10px;
+}
+
+.popup-video figcaption {
+  text-align:left;padding:15px;
+}
+
+/*Video popup desktop*/
+
 @media (min-width: 769px) {
+  
+  .popup-video {
+  width:100%; 
+  height:100%; 
+  position:relative; 
+  padding-top: 200px;
+}    
+
+.popup-video svg {
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  height: 45px;
+  z-index:1;
+}
+  
+.popup-video p {
+  position: absolute;
+  top: 250px;
+  right: 20%;
+  height: 45px;
+  z-index:1;
+}
   
 .popup-video video {
   width:480px; 
@@ -370,53 +410,54 @@ p {
 
 .popup-video img {
   height:270px;
+  padding-left:15px;
 }
 
 .popup-video svg:hover {
   stroke: #f55800;
 }
+  
+
+.popup-video figure {
 }
+
+.popup-video figcaption {
+  display:none;
+ /* text-align:right;
+  padding:15px;*/
+}
+}
+
+/*End*/
 
 /*Second menu desktop*/
 
 @media (min-width: 769px) {
   
-.menu-second-home {
+.menu-second-simple-container {
   position:fixed;
   top:0px;
   right:0px;
   width:75px;
   height:100%;
-  border-left: 1px solid #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-  text-decoration:none;
-  color:#ffffff;
-}
-     
-.menu-second-home:hover {
-  color: #f55800;
-}
-
-.menu-second-back {
-  position:fixed;
-  top:0px;
-  right:0px;
-  width:75px;
-  height:50%;
+  padding-top:75px;
   border-left: 1px solid #000000;
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-  text-decoration:none;
-    color:#000000;
-}
-  
-.menu-second-back:hover {
-  color: #f55800;
+  align-items: center; 
+  text-align:center;
+  }
+
+.menu-second-back {
+  position:fixed;
+  top:75px;
+  right:0px;
+  width:75px;
+  height:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align:center;
 }
   
 .menu-second-forward {
@@ -425,26 +466,48 @@ p {
   right:0px;
   width:75px;
   height:50%;
-  border-left: 1px solid #000000;
   display: flex;
   justify-content: center;
-  align-items: center;   
-  transition: 0.3s;
-  text-decoration:none;
-    color:#000000;
+  align-items: center; 
+  text-align:center;
 }
   
-.menu-second-forward:hover {
-  color: #f55800;
+.menu-second-home {
+  position:fixed;
+  bottom:0px;
+  right:0px;
+  width:75px;
+  height:100%;
+  border-left: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align:center;
 }
 
-.rotate90 {
+.menu-second-element {
   transform: rotate(90deg);
+  transition:0.3s;
 }
   
-  .plus7 {
-    position:relative;
-    right:7px;
+.menu-second-element:hover{
+    color:#f55800;
+  }
+  
+.desktop {
+    display: auto;
+}
+  
+.mobile {
+    display: none;
+}
+  
+.top {
+  margin-up:10px;
+}
+  
+.bottom {
+    margin-bottom:10px;
   }
 }  
 
@@ -454,7 +517,7 @@ p {
   
 @media (max-width: 769px) {
   
-  .menu-second-simple-container {
+.menu-second-simple-container {
   width:100%;
   height:50px;
   display: flex;
@@ -476,32 +539,21 @@ p {
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
   }
-  
-  .menu-second-home {
+
+.menu-second-element {
   display: flex;
   align-items: center;    
   column-gap:10px;
-  transition: 0.3s;
   text-decoration:none;
   color:#000000;
 }
-
-  .menu-second-back {
-  display: flex;
-  align-items: center;    
-  column-gap:10px;
- transition: 0.3s;
-    text-decoration:none;
-    color:#000000;
+  
+.desktop {
+    display: none;
 }
   
-.menu-second-forward {
-  display: flex;
-  align-items: center; 
-  column-gap:15px;
- transition: 0.3s;
-  text-decoration:none;
-    color:#000000;
+.mobile {
+    display: auto;
 }
 
 }
@@ -512,6 +564,12 @@ p {
   border: 1px solid;
   border-radius: 50%;
   padding: 2px;
+}
+
+.circle5x{
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 footer { 
