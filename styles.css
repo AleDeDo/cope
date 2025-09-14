@@ -283,7 +283,7 @@ p {
 
 .title-home-link:hover {
   color: #f55800;
-  padding-left:20px;
+  column-gap:20px;
 }
 
 .container-simple {
@@ -384,7 +384,7 @@ p {
   width:100%; 
   height:100%; 
   position:relative; 
-  padding-top: 200px;
+  padding-top: 100px;
 }    
 
 .popup-video svg {
@@ -397,19 +397,19 @@ p {
   
 .popup-video p {
   position: absolute;
-  top: 250px;
-  right: 20%;
+  top: 150px;
+  right: 75px;
   height: 45px;
   z-index:1;
 }
   
 .popup-video video {
-  width:480px; 
-  height:270px;
+  width:720px; 
+  height:405px;
 }
 
 .popup-video img {
-  height:270px;
+  height:405px;
   padding-left:15px;
 }
 
