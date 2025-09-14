@@ -598,24 +598,6 @@ footer {
 
 /*End*/
 
-footer { 
-  width:100%;
-  height:50px;
-} 
-
-/*Footer mobile*/
-  
-@media (max-width: 769px) {
-  footer { 
-  width:100%;
-  height:75px;
-  background-color:#ffffff;
-  color: #000000;
-} 
-}
-
-/*End*/
-
 .footer-home {
   position:fixed;
   bottom:0px;
