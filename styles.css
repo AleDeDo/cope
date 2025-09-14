@@ -509,9 +509,6 @@ p {
     color:#f55800;
   }
   
-.desktop {
-    display: auto;
-}
   
 .mobile {
     display: none;
@@ -565,10 +562,6 @@ p {
   
 .desktop {
     display: none;
-}
-  
-.mobile {
-    display: auto;
 }
 
 }
