@@ -429,8 +429,25 @@ p {
 
 .popup-video figcaption {
   display:none;
- /* text-align:right;
-  padding:15px;*/
+}
+}
+
+/*End*/
+
+.banner-simple {
+  width:100%;
+  padding-top:25px;
+}
+
+/*Banner simple page desktop*/
+
+@media (min-width: 769px) {
+  .banner-simple {
+  position:absolute;
+  padding-top:0px;
+  top:200px;
+  right:100px;
+  width:405px;
 }
 }
 
