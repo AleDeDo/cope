@@ -360,7 +360,8 @@ p {
   .container-simple {
   padding:50px 150px 30px 100px;
 }
-   .table-width {
+  
+  .table-width {
     max-width:55% !important;
   }
 }
@@ -369,7 +370,7 @@ p {
   height:75px; 
   width:75px; 
   object-fit:cover; 
-  border-radius: 50%;
+  border-radius: 50%; 
 }
 
 .circle2{
@@ -387,11 +388,10 @@ p {
 @media (min-width: 769px) {
   .hover:hover {
   color: #f55800;
-} 
+}  
 }
 
 /*End*/
-
 
 .popup-video-container {
   width:100%; 
@@ -444,13 +444,13 @@ p {
 /*Video popup desktop*/
 
 @media (min-width: 769px) {
-.popup-video {
+ .popup-video {
   width:100%; 
   height:500px; 
   display:flex; 
   justify-content: center; 
   align-items: flex-end;
-}
+}    
 
 .popup-video svg {
   position: absolute;
@@ -459,11 +459,11 @@ p {
   height: 45px;
   z-index:1;
 }
-
+  
 .popup-video svg:hover {
   stroke: #f55800;
 }
-
+  
 .popup-video-flex {
   width:100%; 
   height:400px; 
@@ -546,7 +546,7 @@ p {
 /*Second menu desktop*/
 
 @media (min-width: 769px) {
-  
+ 
 .blue-band {
   position:fixed;
   top:0px;
@@ -555,7 +555,7 @@ p {
   height:100%;
   padding-top:75px;
   background-color: #2658EC;
-  }
+  }  
   
 .menu-second-simple-container {
   position:fixed;
@@ -577,7 +577,7 @@ p {
   top:75px;
   right:0px;
   width:75px;
-  height:50%;
+  height:50%;  
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -698,7 +698,7 @@ footer {
   background-color:#ffffff;
   color: #000000;
 } 
-  
+
 .footer-home {
   position:absolute !important;
   top:700px !important;
