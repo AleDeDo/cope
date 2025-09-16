@@ -61,6 +61,9 @@ html, body {
   font-style: normal;
 }
 
+/*Font desktop*/
+@media (min-width: 769px) {
+
 h1 {
   font-size:72px;
 }
@@ -77,6 +80,32 @@ p {
   font-size:20px;
   font-weight:300
 }
+}
+
+/*End*/
+
+/*Font mobile*/
+@media (max-width: 769px) {
+
+h1 {
+  font-size:36px;
+}
+
+h2 {
+  font-size:28px;
+}
+
+h3 {
+  font-size:20px;
+}
+
+p {
+  font-size:14px;
+  font-weight:300
+}
+}
+
+/*End*/
 
 .header-home {
   position:fixed;
@@ -86,9 +115,21 @@ p {
   z-index:1;
 }
 
-.header-simple {
+@media (max-width: 769px) {
+  .header-home {
+  position:absolute;
+  top:0px;
   width:100%;
   height:75px;
+  z-index:1;
+}
+}
+
+.header-simple {
+  position:relative;
+  width:100%;
+  height:75px;
+  z-index:1;
 }
 
 .transparent {
@@ -96,13 +137,17 @@ p {
 }
 
 .white {
-  background-color: #ffffff;
   border-bottom: 1px solid #000000;
 }
 
 .blue {
   background-color: #2658EC;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #000000;
+}
+
+.white svg {
+  fill: #2658EC;
+  stroke: #2658EC;
 }
 
 .logo {
@@ -134,11 +179,16 @@ p {
 }
 
 
-/*Heades hover desktop*/
+/*Header hover desktop*/
 
 @media (min-width: 769px) {
 .header-home svg:hover  {
   stroke: #f55800;
+}
+  
+.white svg {
+  fill: #ffffff;
+  stroke: #ffffff;
 }
   
 .header-simple svg:hover  {
@@ -205,7 +255,7 @@ p {
   padding: 20px;
   font-size: 30px;
   margin-right: 10px;
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 /*Main menu hover desktop*/
@@ -213,7 +263,7 @@ p {
 @media (min-width: 769px) {
   .menu-main {
   width: 500px;
-  transition: 0.5s;
+  transition: 0.3s;
   }
   
 .menu-main-nav a:hover {
@@ -238,11 +288,18 @@ p {
 
 .container-home {
   width:100%;
-  Height:100%;
+  height:100%;
   position: fixed;
   color: #ffffff;
   text-align:center;
   background: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 769px) {
+  .container-home {
+  height:650px;
+  position: absolute !important;
+}
 }
 
 .title-home {
@@ -264,7 +321,7 @@ p {
 @media (max-width: 769px) {
   .title-home {
   font-size:54px !important;
-  margin-top: 200px!important;
+  margin-top:200px !important;
 }
 }
 
@@ -303,41 +360,38 @@ p {
   .container-simple {
   padding:50px 150px 30px 100px;
 }
+   .table-width {
+    max-width:55% !important;
+  }
 }
 
 .interview-img {
-  height:100px; 
-  width:100px; 
+  height:75px; 
+  width:75px; 
   object-fit:cover; 
-  border-radius: 50%; 
-  border: 1px solid #000000;
+  border-radius: 50%;
 }
 
-.interview-play {
-  display: flex;
-  align-items: center; 
-  column-gap:15px;
-  text-decoration:none;
-  color:#000000;
-}
-
-.circle5x{
+.circle2{
   border: 1px solid;
   border-radius: 50%;
-  padding: 10px;
+  padding: 2px;
   transform: rotate(180deg);
 }
 
 /*Ver video hover desktop*/
+.hover {
+  color: #2658EC;
+}
 
 @media (min-width: 769px) {
-
-.interview-play:hover {
+  .hover:hover {
   color: #f55800;
-}
+} 
 }
 
 /*End*/
+
 
 .popup-video-container {
   width:100%; 
@@ -354,7 +408,7 @@ p {
 .popup-video {
   width:100%; 
   height:100%; 
-  position:relative; 
+  text-align: center;
 }
 
 .popup-video svg {
@@ -370,28 +424,33 @@ p {
   padding-top:75px;
 }
 
-.popup-video img {
-  height:216px;
+.banner-video {
+  width:270px;
+  margin:0 auto;
 }
 
-.popup-video figure {
-  margin-top:10px;
+.banner-video img {
+  width:270px;
+  padding-top:10px;
 }
 
-.popup-video figcaption {
-  text-align:left;padding:15px;
+.banner-video p {
+  text-align:right;
+  padding-top:25px;
+  font-size:20px;
+  font-weight:300
 }
 
 /*Video popup desktop*/
 
 @media (min-width: 769px) {
-  
-  .popup-video {
+.popup-video {
   width:100%; 
-  height:100%; 
-  position:relative; 
-  padding-top: 100px;
-}    
+  height:500px; 
+  display:flex; 
+  justify-content: center; 
+  align-items: flex-end;
+}
 
 .popup-video svg {
   position: absolute;
@@ -400,43 +459,45 @@ p {
   height: 45px;
   z-index:1;
 }
-  
-.popup-video p {
-  position: absolute;
-  top: 150px;
-  right: 75px;
-  height: 45px;
-  z-index:1;
-}
-  
-.popup-video video {
-  width:720px; 
-  height:405px;
-}
-
-.popup-video img {
-  height:405px;
-  padding-left:15px;
-}
 
 .popup-video svg:hover {
   stroke: #f55800;
 }
+
+.popup-video-flex {
+  width:100%; 
+  height:400px; 
+  text-align:right; 
+  display:flex; 
+  justify-content: center; 
+  align-items: flex-end;"
+  }
   
-
-.popup-video figure {
+.popup-video video {
+  width:640px;
+  height:360px;
+  padding-right:5px;
+}
+  
+.popup-video img {
+  width:360px;
+  height:360px;
 }
 
-.popup-video figcaption {
-  display:none;
-}
 }
 
 /*End*/
 
-.banner-simple {
+.banner-simple img {
   width:100%;
+  padding-top:10px;
+}
+
+.banner-simple p {
+  text-align:right;
   padding-top:25px;
+  font-size:20px;
+  font-weight:300; 
 }
 
 /*Banner simple page desktop*/
@@ -447,7 +508,21 @@ p {
   padding-top:0px;
   top:200px;
   right:100px;
-  width:405px;
+  width: 540px;
+  z-index:1;
+}
+  
+.banner-simple img{
+  padding-top:10px;
+}
+  
+  
+.banner-simple p {
+  text-align:right;
+  padding-top:25px;
+  font-size:20px;
+  font-weight:300;
+  color:#ffffff;
 }
 }
 
@@ -472,6 +547,16 @@ p {
 
 @media (min-width: 769px) {
   
+.blue-band {
+  position:fixed;
+  top:0px;
+  right:0px;
+  width:300px;
+  height:100%;
+  padding-top:75px;
+  background-color: #2658EC;
+  }
+  
 .menu-second-simple-container {
   position:fixed;
   top:0px;
@@ -480,6 +565,7 @@ p {
   height:100%;
   padding-top:75px;
   border-left: 1px solid #000000;
+  background-color: #2658EC;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -525,13 +611,13 @@ p {
 
 .menu-second-element {
   transform: rotate(90deg);
+  color:#ffffff;
   transition:0.3s;
 }
   
 .menu-second-element:hover{
     color:#f55800;
   }
-  
   
 .mobile {
     display:none !important;
@@ -563,8 +649,8 @@ p {
   }
   
 .menu-second-home-container {
-  position:fixed;
-  bottom:75px;
+  position:absolute;
+  top:650px;
   width:100%;
   height:50px;
   display: flex;
@@ -573,6 +659,7 @@ p {
   background-color: #ffffff;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
+  z-index:1;
   }
 
 .menu-second-element {
@@ -611,6 +698,12 @@ footer {
   background-color:#ffffff;
   color: #000000;
 } 
+  
+.footer-home {
+  position:absolute !important;
+  top:700px !important;
+  color: #000000 !important;
+}
 }
 
 /*End*/
@@ -618,6 +711,7 @@ footer {
 .footer-home {
   position:fixed;
   bottom:0px;
+  color: #ffffff;
 }
 
 .footer-home p {
