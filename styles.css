@@ -507,7 +507,7 @@ p {
   position:absolute;
   padding-top:0px;
   top:200px;
-  right:100px;
+  right:150px;
   width: 540px;
   z-index:1;
 }
@@ -551,7 +551,7 @@ p {
   position:fixed;
   top:0px;
   right:0px;
-  width:300px;
+  width:475px;
   height:100%;
   padding-top:75px;
   background-color: #2658EC;
