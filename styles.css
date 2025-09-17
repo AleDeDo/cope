@@ -457,10 +457,10 @@ p {
 @media (min-width: 769px) {
  .popup-video {
   width:100%; 
-  height:500px; 
+  height:100%; 
   display:flex; 
   justify-content: center; 
-  align-items: flex-end;
+  align-items: center;
 }    
 
 .popup-video svg {
@@ -477,22 +477,22 @@ p {
   
 .popup-video-flex {
   width:100%; 
-  height:400px; 
+  height:600px; 
   text-align:right; 
   display:flex; 
   justify-content: center; 
-  align-items: flex-end;"
+  align-items: center;
   }
   
 .popup-video video {
-  width:640px;
-  height:360px;
+  width:960px;
+  height:540px;
   padding-right:5px;
 }
   
 .popup-video img {
-  width:360px;
-  height:360px;
+  width:432px;
+  height:432px;
 }
 
 }
