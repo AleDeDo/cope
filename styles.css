@@ -478,7 +478,7 @@ p {
 .popup-video-flex {
   width:100%; 
   height:600px; 
-  text-align:right; 
+  text-align:left; 
   display:flex; 
   justify-content: center; 
   align-items: center;
