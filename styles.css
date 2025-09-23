@@ -414,6 +414,7 @@ p {
   z-index:2;
   transform: scale(0);
   transition:0.3s;
+  /*Per aggiungere il testo dell'intervista sotto bisogna mettere la proprietà overflow-y: auto; e aggiustare il div che contiene il testo*/
 }
 
 .popup-video {
@@ -497,7 +498,40 @@ p {
 
 }
 
+/*Inizio parte per testo che scompare da aggiungere al css. 
+Biosgna uniformare anche html di saludos*/
+
+.text {
+  text-align:center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+  height: 0;
+  margin:0;
+  scroll-margin-top: 100px;
+}
+
+/*Leer hover desktop*/
+.text i {
+  color: #2658EC;
+}
+
+@media (min-width: 769px) {
+.text i:hover {
+  color: #f55800;
+}  
+}
+
+
 /*End*/
+
+.text p {
+  text-align:justify;
+  padding-top:25px;
+}
+
+
+/*Fine parte per testo che scompare da aggiungere al css*/
 
 .banner-simple img {
   width:100%;
