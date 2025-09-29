@@ -51,7 +51,13 @@ html, body {
   border:0;
   margin:0;
   padding:0;
-  font-family: "Sofia Sans Condensed", sans-serif;
+}
+
+.sofia-sans-<uniquifier> {
+  font-family: "Sofia Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
  .sofia-sans-condensed-<uniquifier> {
@@ -65,20 +71,31 @@ html, body {
 @media (min-width: 769px) {
 
 h1 {
-  font-size:72px;
+  font-size:72px;  
+  font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 h2 {
   font-size:54px;
+  font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 h3 {
   font-size:36px;
+  font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 p {
   font-size:20px;
-  font-weight:300
+  font-weight:300;
+  font-family: "Sofia Sans", sans-serif;
+}
+  
+figcaption {
+  font-size:16px;
+  font-weight:300;
+  font-family: "Sofia Sans", sans-serif;
+  font-style: italic;
 }
 }
 
@@ -89,19 +106,30 @@ p {
 
 h1 {
   font-size:36px;
+  font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 h2 {
   font-size:28px;
+  font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 h3 {
   font-size:20px;
+  font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 p {
   font-size:14px;
-  font-weight:300
+  font-weight:300;
+  font-family: "Sofia Sans", sans-serif;
+}
+  
+figcaption {
+  font-size:12px;
+  font-weight:300;
+  font-family: "Sofia Sans", sans-serif;
+  font-style: italic;
 }
 }
 
@@ -113,10 +141,11 @@ p {
   width:100%;
   height:75px;
   z-index:1;
+  border-bottom: 1px solid #ffffff;
 }
 
 @media (max-width: 769px) {
-  .header-home {
+.header-home {
   position:absolute;
   top:0px;
   width:100%;
@@ -130,32 +159,26 @@ p {
   width:100%;
   height:75px;
   z-index:1;
-}
-
-.transparent {
-  border-bottom: 1px solid #ffffff;
-}
-
-.white {
   border-bottom: 1px solid #000000;
 }
 
-.blue {
-  background-color: #2658EC;
-  border-bottom: 1px solid #000000;
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  height: 45px;
+  z-index:1;
 }
 
-.white svg {
-  fill: #2658EC;
-  stroke: #2658EC;
-}
-
+@media (max-width: 769px) {
 .logo {
   position: absolute;
   top: 15px;
   left: 15px;
   height: 45px;
   z-index:1;
+}  
 }
 
 .header-home svg {
@@ -166,8 +189,6 @@ p {
   z-index:1;
   transition: 0.3s;
 }
-
-
 
 .header-simple svg {
   position: absolute;
@@ -180,19 +201,22 @@ p {
 
 
 /*Header hover desktop*/
-
 @media (min-width: 769px) {
 .header-home svg:hover  {
   stroke: #f55800;
 }
   
-.white svg {
-  fill: #ffffff;
-  stroke: #ffffff;
-}
-  
 .header-simple svg:hover  {
   stroke: #f55800;
+}
+}
+
+/*White color desktop*/
+@media (min-width: 769px) {
+.white  {
+  color:#ffffff;
+  fill: #ffffff;
+  stroke: #ffffff;
 }
 }
 
@@ -206,7 +230,8 @@ p {
   height: 100%;
   background-color: #2658EC;
   text-align:left;
-  color:#ffffff;
+  color:#ffffff;  
+  font-family: "Sofia Sans Condensed", sans-serif;
   font-weight:700;  
   font-size:36px;
   z-index:2;
@@ -307,7 +332,7 @@ p {
 }
 
 @media (max-width: 769px) {
-  .container-home {
+.container-home {
   height:650px;
   position: absolute !important;
 }
@@ -329,8 +354,13 @@ p {
   align-items: center;
   }
 
+.title-home-link-container p {
+  font-size: 14px;
+  font-weight:700;
+  }
+
 @media (max-width: 769px) {
-  .title-home {
+.title-home {
   font-size:54px !important;
   margin-top:200px !important;
 }
@@ -357,221 +387,154 @@ p {
 }
 }
 
-.container-simple {
-  padding:50px 25px 30px 25px;
-} 
-
 .title-page {
-  color:#2658EC;
+  color:#2658EC;  
+}
+
+.container-simple {  
+  padding:25px; 
+}
+
+.content {  
+  width:100%; 
+}
+
+.content img {
+  width:100%;
+}
+
+.content p {  
+  line-height:1.25;
+}
+
+.content-banner {  
+  width:100%;   
+}
+
+.content-banner img {  
+  width:100%; 
+}
+
+.caption {
+  padding: 10px 0;
+}
+
+.caption-right {
+  text-align: right;
+  padding: 10px 0;
+}
+
+.caption-left {
+  text-align: left;
+  padding: 10px 0;
 }
 
 /*Content simple desktop*/
 
 @media (min-width: 769px) {
-  .container-simple {
-  padding:50px 150px 30px 100px;
+  
+.title-page {
+  color:#2658EC;   
 }
   
-  .table-width {
-    max-width:55% !important;
-  }
-}
-
-.interview-img {
-  height:75px; 
-  width:75px; 
-  object-fit:cover; 
-  border-radius: 50%; 
-}
-
-.circle2{
-  border: 1px solid;
-  border-radius: 50%;
-  padding: 2px;
-  transform: rotate(180deg);
-}
-
-/*Ver video hover desktop*/
-.hover {
-  color: #2658EC;
-}
-
-@media (min-width: 769px) {
-  .hover:hover {
-  color: #f55800;
-}  
-}
-
-/*End*/
-
-.popup-video-container {
-  width:100%; 
-  height:100%; 
-  background-color: rgba(255, 255, 255, 0.85); 
-  position:fixed; 
-  top:0; 
-  text-align:center; 
-  z-index:2;
-  transform: scale(0);
-  transition:0.3s;
-  /*Per aggiungere il testo dell'intervista sotto bisogna mettere la proprietà overflow-y: auto; e aggiustare il div che contiene il testo*/
-}
-
-.popup-video {
-  width:100%; 
-  height:100%; 
-  text-align: center;
-}
-
-.popup-video svg {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  height: 45px;
-  z-index:1;
-}
-
-.popup-video video {
-  width:100%; 
-  padding-top:75px;
-}
-
-.banner-video {
-  width:270px;
-  margin:0 auto;
-}
-
-.banner-video img {
-  width:270px;
-  padding-top:10px;
-}
-
-.banner-video p {
-  text-align:right;
-  padding-top:25px;
-  font-size:20px;
-  font-weight:300
-}
-
-/*Video popup desktop*/
-
-@media (min-width: 769px) {
- .popup-video {
-  width:100%; 
-  height:100%; 
-  display:flex; 
-  justify-content: center; 
-  align-items: center;
-}    
-
-.popup-video svg {
-  position: absolute;
-  top: 100px;
-  right: 15px;
-  height: 45px;
-  z-index:1;
+.title-top {
+  color:#ffffff !important;
 }
   
-.popup-video svg:hover {
-  stroke: #f55800;
+.container-simple {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: top; 
+  column-gap:75px; 
+  padding:75px 150px 50px 100px; 
+  max-width:100% !important;
+}
+
+.content img { 
+  max-width:700px !important;
 }
   
-.popup-video-flex {
-  width:100%; 
-  height:600px; 
-  text-align:left; 
-  display:flex; 
-  justify-content: center; 
-  align-items: center;
-  }
-  
-.popup-video video {
-  width:960px;
-  height:540px;
-  padding-right:5px;
-}
-  
-.popup-video img {
-  width:432px;
-  height:432px;
-}
-
-}
-
-/*Inizio parte per testo che scompare da aggiungere al css. 
-Biosgna uniformare anche html di saludos*/
-
-.text {
-  text-align:center;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: 0.3s;
-  height: 0;
-  margin:0;
-  scroll-margin-top: 100px;
-}
-
-/*Leer hover desktop*/
-.text i {
-  color: #2658EC;
-}
-
-@media (min-width: 769px) {
-.text i:hover {
-  color: #f55800;
-}  
-}
-
-
-/*End*/
-
-.text p {
-  text-align:justify;
-  padding-top:25px;
-}
-
-
-/*Fine parte per testo che scompare da aggiungere al css*/
-
-.banner-simple img {
-  width:100%;
-  padding-top:10px;
-}
-
-.banner-simple p {
-  text-align:right;
-  padding-top:25px;
-  font-size:20px;
-  font-weight:300; 
-}
-
-/*Banner simple page desktop*/
-
-@media (min-width: 769px) {
-  .banner-simple {
-  position:absolute;
-  padding-top:0px;
-  top:200px;
-  right:150px;
-  width: 540px;
-  z-index:1;
-}
-  
-.banner-simple img{
-  padding-top:10px;
-}
-  
-  
-.banner-simple p {
-  text-align:right;
-  padding-top:25px;
-  font-size:20px;
-  font-weight:300;
+.content-banner {
+  width:80%;   
+  max-width:600px;
   color:#ffffff;
 }
 }
 
 /*End*/
+
+.popup-window {
+  width:100%; 
+  height:100%; 
+  background-color: #ffffff; 
+  position:fixed; 
+  top:0; 
+  left:0; 
+  text-align:center; 
+  transition:0.3s; 
+  z-index:1; 
+  transform: scale(0); 
+  overflow-y:scroll;
+}
+
+.popup-window svg {
+  position: absolute; 
+  top: 15px; 
+  right: 15px; 
+  height: 45px; 
+  z-index:1; 
+  transition: 0.3s;
+}
+
+.container-popup {
+    padding-top:100px;
+  } 
+
+.text-popup {
+  text-align:left;
+}
+
+.video-popup video {
+  width:100%;
+}
+
+.banner-popup {
+  color:#000000 !important;
+}
+
+/*Popup desktop*/
+
+@media (min-width: 769px) {
+.popup-window {
+  display: flex; 
+  justify-content: space-between;
+  align-items: top; 
+  column-gap:75px;
+  max-width:100% !important;
+  }
+
+  .container-popup {
+    padding-top:150px;
+  }  
+  
+  .video-popup video {
+  padding-top:37px;
+}
+}
+
+/*End popup desktop*/
+
+.menu-second-home-container p {  
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-size:14px;
+  font-weight:700;
+}
+
+.menu-second-simple-container p {  
+  font-family: "Sofia Sans Condensed", sans-serif;
+  font-size:14px;
+  font-weight:700;
+}
 
 .menu-second-back {
   color:#000000;
@@ -592,15 +555,36 @@ Biosgna uniformare anche html di saludos*/
 
 @media (min-width: 769px) {
  
-.blue-band {
+.blue-band-right {
   position:fixed;
   top:0px;
   right:0px;
-  width:475px;
+  width:450px;
   height:100%;
   padding-top:75px;
   background-color: #2658EC;
+  z-index:-1;
   }  
+  
+.blue-band-left {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:375px;
+  height:100%;
+  padding-top:75px;
+  background-color: #2658EC;
+  z-index:-1;
+  } 
+
+.blue-band-top {
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:375px;
+  background-color: #2658EC;
+  z-index:-1;
+  } 
   
 .menu-second-simple-container {
   position:fixed;
@@ -610,7 +594,6 @@ Biosgna uniformare anche html di saludos*/
   height:100%;
   padding-top:75px;
   border-left: 1px solid #000000;
-  background-color: #2658EC;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -647,6 +630,7 @@ Biosgna uniformare anche html di saludos*/
   right:0px;
   width:75px;
   height:100%;
+  color:#ffffff;
   border-left: 1px solid #ffffff;
   display: flex;
   justify-content: center;
@@ -656,7 +640,6 @@ Biosgna uniformare anche html di saludos*/
 
 .menu-second-element {
   transform: rotate(90deg);
-  color:#ffffff;
   transition:0.3s;
 }
   
@@ -711,7 +694,7 @@ Biosgna uniformare anche html di saludos*/
   display: flex;
   align-items: center;    
   column-gap:10px;
-  text-decoration:none;
+  text-decoration:none !important;
   color:#000000;
 }
   
@@ -734,58 +717,55 @@ footer {
   height:50px;
 } 
 
+footer p {
+  padding:20px 15px 0 100px;
+  font-size:14px;  
+  font-weight:300;
+  text-align:left;  
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-home {
+  position:fixed;
+  bottom:0px;
+}
+
+
 /*Footer mobile*/
   
 @media (max-width: 769px) {
-  footer { 
+footer { 
   width:100%;
   height:75px;
   background-color:#ffffff;
   color: #000000;
 } 
+  
+footer p { 
+  padding:20px 15px 0 15px;
+} 
 
 .footer-home {
   position:absolute !important;
   top:700px !important;
-  color: #000000 !important;
 }
 }
 
 /*End*/
 
-.footer-home {
-  position:fixed;
-  bottom:0px;
-  color: #ffffff;
-}
-
-.footer-home p {
-  padding:20px 0 0 15px;
-  font-size:14px;  
-  text-align:left;
-}
-
-.footer-home a {
-  color: #000000;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-simple p {
-  padding:20px 0 0 15px;
-  font-size:14px;  
-  text-align:left;
-}
-
-.footer-simple a {
-  color: #000000;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
 /*Footer hover desktop*/
 
 @media (min-width: 769px) {
+  
+.footer-home p {
+  color: #ffffff;
+}  
+  
 .footer-home a {
   color: #ffffff;
   text-decoration: none;
@@ -797,7 +777,7 @@ footer {
   border-bottom: 1px solid #ffffff;
 }
 
-.footer-simple a:hover {
+footer a:hover {
   color: #000000;
   padding-bottom:1px;
   border-bottom: 1px solid #000000;
