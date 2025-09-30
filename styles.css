@@ -166,7 +166,7 @@ figcaption {
 .logo {
   position: absolute;
   top: 15px;
-  left: 100px;
+  left: 75px;
   height: 45px;
   z-index:1;
 }
@@ -446,7 +446,7 @@ figcaption {
   justify-content: space-between; 
   align-items: top; 
   column-gap:75px; 
-  padding:75px 150px 50px 100px; 
+  padding:75px 150px 50px 75px; 
   max-width:100% !important;
 }
 
@@ -462,6 +462,56 @@ figcaption {
 }
 
 /*End*/
+
+.block-person {
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  width:100%; 
+  column-gap:10px; 
+  padding-bottom:20px; 
+  border-bottom: 1px solid #cccccc;
+}
+
+.block-person img {
+  width:75px; 
+  height:75px; 
+  object-fit:cover; 
+  border-radius:50%;
+}
+
+.block-person p {
+  flex-grow: 1;
+}
+
+.block-person i {
+  color: #2658EC;
+}
+
+.block-news {
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
+  width:100%; 
+  column-gap:10px; 
+  padding-bottom:20px; 
+  border-bottom: 1px solid #cccccc;
+}
+
+.block-news img {
+  width:200px; 
+  height:150px; 
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.block-news p {
+  flex-grow: 1;
+}
+
+.block-news i {
+  color: #2658EC;
+}
 
 .popup-window {
   width:100%; 
@@ -718,7 +768,7 @@ footer {
 } 
 
 footer p {
-  padding:20px 15px 0 100px;
+  padding:20px 15px 0 75px;
   font-size:14px;  
   font-weight:300;
   text-align:left;  
