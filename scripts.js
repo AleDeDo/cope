@@ -14,6 +14,8 @@ document.getElementsByTagName('body')[0].style.overflow = "hidden";
 function popup_text_out_1() {
 document.getElementById('popup-text-1').style.transform = "scale(0)";
 document.getElementsByTagName('body')[0].style.overflow = "auto";
+document.getElementById('video').pause();
+document.getElementById('video').currentTime = 0;  
 }
 
 function popup_text_in_2() {
