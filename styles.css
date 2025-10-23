@@ -403,6 +403,10 @@ figcaption {
   width:100%;
 }
 
+.content video {
+  width:100%;
+}
+
 .content p {  
   line-height:1.25;
 }
@@ -451,6 +455,10 @@ figcaption {
 }
 
 .content img { 
+  max-width:700px !important;
+}
+  
+.content video { 
   max-width:700px !important;
 }
   
