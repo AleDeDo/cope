@@ -791,6 +791,7 @@ figcaption {
 
 .container-popup {
     padding-top:100px;
+  width:100% !important;
   } 
 
 .content-popup {
@@ -801,14 +802,6 @@ figcaption {
   text-decoration: none;
   font-weight: 700;
   color: #2658EC;  
-}
-
-.content-popup video {
-  width:100%;
-}
-
-.content-popup audio {
-  width:100%;
 }
 
 .banner-popup {
@@ -834,13 +827,11 @@ figcaption {
 /*end popup desktop*/
 
 .audio {
-  width:1000px !important; 
   min-width:100% !important; 
   max-width:100% !important;
 }
 
 .video {
-  width:1000px !important; 
   min-width:100% !important; 
   max-width:100% !important;
 }
