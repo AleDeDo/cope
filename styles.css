@@ -790,8 +790,7 @@ figcaption {
 }
 
 .container-popup {
-    padding-top:100px;
-  width:100% !important;
+  padding-top:100px;
   } 
 
 .content-popup {
@@ -821,6 +820,8 @@ figcaption {
 
   .container-popup {
     padding-top:150px;
+  padding-top:100px;
+  width:100% !important;
   }  
 }
 
