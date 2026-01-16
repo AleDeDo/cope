@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="styles.css">
 <script src="scripts.js" async></script>
-<title>60 Aniversario COPE Valencia</title>
+<title>Plano Fallas 2026</title>
 	
 <link rel="shortcut icon" href="https://www.cope.es/favicon/cope/favicon.ico?1756884134">
 
@@ -20,8 +21,11 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
 </head>
 <body>
 
@@ -45,14 +49,14 @@
 <div class="content-banner desktop">
 <figure>
 <figcaption class="caption-left">En colaboración con</figcaption>
-<a href="https://racingdakartvalencia.com/" target="_blanck"><img src="https://alededo.github.io/cope/img/banner-5.jpg" /></a>
+<a href="https://racingdakartvalencia.com/" target="_blanck"><img id="banner" src="https://alededo.github.io/cope/img/banner-5.jpg" /></a>
 <figure> 
 </div>
   
 <div class="content">
 <h1 class="title-page">PLANO DE FALLAS 2026</h1><br>
 <p><strong>Descubre las mejores Fallas de la ciudad</strong>.</p><br><br>
-<div id="map" style="width:100%; height:500px;"></div>
+<div id="map" style="width:100%; height:500px; background-color:#ffff00;"></div>
 </div>
   
 <div class="content-banner mobile">
@@ -90,5 +94,6 @@
 </footer>
 	
 </body>
+
 <script src="map.js" async></script>
 </html>
