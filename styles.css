@@ -241,7 +241,7 @@ figcaption {
   font-family: "Sofia Sans Condensed", sans-serif;
   font-weight:700;  
   font-size:36px;
-  z-index:2;
+  z-index:1000;
   transition: 0.3s;
 }
 
@@ -924,3 +924,11 @@ footer a:hover {
 }
 
 /*END FOOTER*/
+
+/*MAP*/
+
+.leaflet-control-container {
+  display: none !important;
+}
+
+/*END MAP*/
