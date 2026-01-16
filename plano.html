@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js" async></script>
+<title>60 Aniversario COPE Valencia</title>
+	
+<link rel="shortcut icon" href="https://www.cope.es/favicon/cope/favicon.ico?1756884134">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+</head>
+<body>
+
+<header class="header-simple">
+<a href="index.html"><img class="logo mobile" src="https://alededo.github.io/cope/logo_b.png"/><img class="logo desktop" src="https://alededo.github.io/cope/logo_w.png"/></a><i class="material-symbols-outlined" onclick="menu_in()" style="font-size:50px; font-weight:200; line-height: 75px; position:absolute; right:15px;">dehaze</i>
+</header>
+
+<div class="menu-main" id="menu-main"  onclick="menu_out()">
+<svg fill="#ffffff" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"></path></svg>
+<ul class="menu-main-nav">
+<li><a href="#">INICIO</a></li>
+<li><a href="#">PLANO</a></li>
+<li><a href="#">CALENDARIO</li>
+<li><a href="#">FRIVOLIDADES</a></li>
+<li><a href="https://www.cope.es/directos/cope-mas-valencia" class="container-play-menu" target="_blank"><i class="material-symbols-outlined play-menu">arrow_back_2</i><span style="text-decoration: underline;">Escucha COPE Valencia</span></a></li>
+</ul>
+</div>
+    
+<div class="container-simple">
+  
+<div class="content-banner desktop">
+<figure>
+<figcaption class="caption-left">En colaboración con</figcaption>
+<a href="https://racingdakartvalencia.com/" target="_blanck"><img src="https://alededo.github.io/cope/img/banner-5.jpg" /></a>
+<figure> 
+</div>
+  
+<div class="content">
+<h1 class="title-page">PLANO DE FALLAS 2026</h1><br>
+<p><strong>Descubre las mejores Fallas de la ciudad</strong>.</p><br><br>
+<div id="map" style="width:100%; height:500px;"></div>
+</div>
+  
+<div class="content-banner mobile">
+<figure>
+<figcaption class="caption-right">En colaboración con</figcaption>
+<a href="https://racingdakartvalencia.com/" target="_blanck"><img src="https://alededo.github.io/cope/img/banner-5.jpg" /></a>
+<figure> 
+</div>
+  
+</div>
+  
+
+<div class="blue-band-left"></div>
+
+<div class="menu-second-simple-container">
+<a href="#" class="menu-second-back">
+<div class="menu-second-element">
+<i class="material-symbols-outlined circle mobile">arrow_back</i>
+<p>INICIO</p>
+<i class="material-symbols-outlined circle desktop up" style="margin-top:10px;">arrow_downward</i>
+</div>
+</a>
+<a href="#" class="menu-second-forward">
+<div class="menu-second-element">
+<i class="material-symbols-outlined circle desktop bottom">arrow_upward</i>
+<p>CALENDARIO</p>
+<i class="material-symbols-outlined circle mobile">arrow_forward</i>
+</div>
+</a>
+</div>
+
+
+<footer class="footer-simple">
+<p>© Radio Popular S.A. | Todos los derechos reservados. | <a href="https://www.cope.es/contacta.html" target="blanck_">Contacta</a> | <a href="https://www.cope.es/aviso-legal.html" target="blanck_">Aviso Legal</a> | <a href="https://www.cope.es/politica-privacidad.html" target="blanck_">Política de privacidad</a> | <a href="https://www.cope.es/politica-cookies.html" target="blanck_">Política de cookies</a></p>
+</footer>
+	
+</body>  
+</html>
