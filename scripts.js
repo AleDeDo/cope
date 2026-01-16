@@ -225,10 +225,10 @@ setInterval(function () {
         link = links[banner - 1];
     }
   
-  var url = 'https://alededo.github.io/cope/img/banner-' + banner + '.jpg';
+  var url = 'img/banner-' + banner + '.jpg';
 
-    document.getElementById('banner').src = url;
-    document.getElementById('banner').href = link;
+    document.getElementById('bannerd').src = url;
+    document.getElementById('bannerm').src = url;
 
     banner++;
     if (banner > 4) {
